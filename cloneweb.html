@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karthikesh Robotics</title>
+    <style>
+       
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+      
+        .header {
+            background-color: #000;
+            color: #b0ff4d;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 4em;
+            margin-top: 20px;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+       
+        .services-container {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #202020;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .service-box {
+            background-color: #202020;
+            color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .service-box p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .service-box .read-more {
+            background-color: #b0ff4d;
+            color: #202020;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .tech-container {
+            background-color: #202020;
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .tech-title {
+            font-size: 2.5em;
+            color: #b0ff4d;
+            margin-bottom: 20px;
+        }
+
+        .tech-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .tech-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        
+        .about-us-container {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-us-container h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #202020;
+        }
+
+        .about-us-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-us-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-us-text {
+            margin-top: 20px;
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .about-us-button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #b0ff4d;
+            color: #202020;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        
+        @media (max-width: 768px) {
+            .service-box {
+                width: 100%;
+            }
+
+            .tech-logo {
+                width: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-box {
+                width: 100%;
+            }
+
+            .tech-logo {
+                width: 60px;
+            }
+
+            .header img {
+                width: 80px;
+            }
+        }.footer {
+    background-color: #202020;
+    color: #b0ff4d;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #b0ff4d;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #b0ff4d;
+    text-decoration: none;
+}
+
+.footer-column p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #b0ff4d;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.copyright a {
+    color: #b0ff4d;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+    .register-btn {
+                position: static;
+                display: block;
+                margin: 20px auto;
+            }
+}
+
+    </style>
+</head>
+<body>
+
+   
+    <header class="header">
+        <img src=Clone/logo.jpeg alt="Karthikesh Robotics Logo">
+        <h1>KKR</h1>
+        <p>Innovating Autonomous Solutions for the Future</p>
+        <a href="https://karthikeshrobotics.in/" style="position: absolute; top: 10px; right: 10px; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 10px;">Register Now</a>
+    </header>
+
+    
+    <div class="services-container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3>Autonomous Robots</h3>
+                <p>Autonomous robots represent the cutting edge of modern technology, designed to operate independently without human intervention.</p>
+                <a href="https://karthikeshrobotics.in/" class="read-more">Read More</a>
+                
+            </div>
+            <div class="service-box">
+                <h3>IoT Solutions</h3>
+                <p>By connecting everyday objects to the internet and enabling them to share data, IoT solutions offer unparalleled efficiency and convenience.</p>
+                <a href="https://karthikeshrobotics.in/" class="read-more">Read More</a>
+            </div>
+            <div class="service-box">
+                <h3>Mentorship Program</h3>
+                <p>Our mentorship program provides guidance, advice, and feedback from experienced professionals to help mentees achieve their goals.</p>
+                <a href="https://karthikeshrobotics.in/" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="tech-container">
+        <h1 class="tech-title">Our Technologies</h1>
+        <div class="tech-logos">
+            <img src=Clone/arduino.jpeg alt="Arduino" class="tech-logo">
+            <img src=Clone/iot.jpeg alt="IoT" class="tech-logo">
+            <img src=Clone/ros.jpeg alt="ROS" class="tech-logo">
+            <img src=Clone/Raspberrypi.jpeg alt="Raspberry Pi" class="tech-logo">
+        </div>
+    </div>
+
+    
+    <div class="about-us-container">
+        <h2>About Us</h2>
+        <div class="about-us-content">
+            <div class="about-us-image">
+                <img src=Clone/wh.jpg alt="Warehouse Image">
+            </div>
+            <div class="about-us-text">
+                <p><h1>We are here to Change the Future. Imagine - Innovate - Implement</h1></p>
+                <p>We're venturing into the exciting world of startups, offering advanced products like AGVs, humanoids, and more. Our company not only merchandise groundbreaking industrial robots, domestic robots, and real-time solutions but also dedicates itself to enlightening the younger generation about the latest technology trends through our mentorship program. We firmly believe in equipping young minds with the knowledge they need to transform the future.</p>
+            </div>
+            <a href="https://karthikeshrobotics.in/" class="about-us-button">About Us</a>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Karthikesh Robotics</h3>
+            <p>Our Autonomous Robots will simplify your work. The future is here...</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+                <li><a href="#">Autonomous Robots</a></li>
+                <li><a href="#">Bumpy</a></li>
+                <li><a href="#">Industrial Robots</a></li>
+                <li><a href="#">Mobile Robots</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><i class="fas fa-home"></i> KARTHIKESH ROBOTICS PRIVATE LIMITED <br> 18.B-MANJANAKKARA STREET,<br> South Gate, Madurai South,<br> Madurai-625001, Tamil Nadu</p>
+            <p><i class="fas fa-envelope"></i> karthikeshrobotics@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91-86808354107</p>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2024 Copyright: <a href="#">Karthikesh Robotics Private Limited</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
